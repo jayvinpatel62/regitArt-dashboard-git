@@ -28,9 +28,11 @@
     <body>
 
         <div class="wrapper gridWrapper">
+            <!---------- logo ----------------->
             <div class="logo">
                 <img src="assets/logo.png" />
             </div>
+            <!---------- header ----------------->
             <header class="header">
                 <nav class="mainmenu px-3 py-2">
                     <div uk-navbar>
@@ -70,24 +72,30 @@
                     </button>
                 </nav>
             </header>
+            <!---------- sidebar ----------------->
             <aside class="sidebar">
-                <ul class="uk-nav uk-nav-default" uk-nav>
-                    <li class="item uk-parent uk-open">
-                        <a href="#">Overview</a>
-                        <ul class="uk-nav-sub">
-                            <li class="sub-item uk-active"><a href="#">Artworks</a></li>
-                            <li class="sub-item"><a href="#">HISTORIK</a></li>
-                            <li class="sub-item"><a href="#">PAPPERSKORG</a></li>
-                            <li class="sub-item"><a href="#">UTLÅNINGAR</a></li>
-                            <li class="sub-item"><a href="#">INVENTERINGSLISTOR</a></li>
-                            <li class="sub-item"><a href="#">LISTOR</a></li>
-                        </ul>
-                    </li>
-                    <li class="item"><a href="#">Artists</a></li>
-                    <li class="item"><a href="#">Reports</a></li>
-                    <li class="item"><a href="#">Admin</a></li>
-                    <li class="item"><a href="#">Help</a></li>
-                </ul>
+                <a href="" class="notifiaction-icon">
+                    <i class="bi bi-bell"></i>
+                </a>
+               <div class="pt-5">
+                    <ul class="uk-nav uk-nav-default" uk-nav>
+                        <li class="item uk-parent uk-open">
+                            <a href="#">Overview</a>
+                            <ul class="uk-nav-sub">
+                                <li class="sub-item uk-active"><a href="#">Artworks</a></li>
+                                <li class="sub-item"><a href="#">HISTORIK</a></li>
+                                <li class="sub-item"><a href="#">PAPPERSKORG</a></li>
+                                <li class="sub-item"><a href="#">UTLÅNINGAR</a></li>
+                                <li class="sub-item"><a href="#">INVENTERINGSLISTOR</a></li>
+                                <li class="sub-item"><a href="#">LISTOR</a></li>
+                            </ul>
+                        </li>
+                        <li class="item"><a href="#">Artists</a></li>
+                        <li class="item"><a href="#">Reports</a></li>
+                        <li class="item"><a href="#">Admin</a></li>
+                        <li class="item"><a href="#">Help</a></li>
+                    </ul>
+               </div>
 
                 <ul class="uk-nav uk-nav-default">
                     <li class="item"><a href="#">konstnärsdatabasen</a></li>
@@ -96,384 +104,476 @@
                     <li class="item"><a href="#">Log Out</a></li>
                 </ul>
             </aside>
+            <!---------- main ----------------->
             <main class="main">
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                     <thead>
-                        <tr>
-                            <th class="flag">
-                                <i class="bi bi-flag icon"></i> 
-                            </th>
-                            <th></th>
-                            <th class="">
-                                <label class="label-text" for="">ID-HOMHER</label>
-                                <div class="uk-inline">
-                                    <span class="uk-form-icon uk-form-icon-flip">
-                                        <i class="bi bi-funnel"></i>
-                                    </span>
-                                    <input class="uk-input" type="text" aria-label="Not clickable icon">
-                                </div>
-                            </th>
-                            <th>
-                                <label class="label-text" for="">KONSTNÄR</label>
-                                <div class="uk-inline">
-                                    <span class="uk-form-icon uk-form-icon-flip">
-                                        <i class="bi bi-funnel"></i>
-                                    </span>
-                                    <input class="uk-input" type="text" aria-label="Not clickable icon">
-                                </div>
-                            </th>
-                            <th>
-                                <label class="label-text" for="">TITEL</label>
-                                <div class="uk-inline">
-                                    <span class="uk-form-icon uk-form-icon-flip">
-                                        <i class="bi bi-funnel"></i>
-                                    </span>
-                                    <input class="uk-input" type="text" aria-label="Not clickable icon">
-                                </div>
-                            </th>
-                            <th>
-                                <label class="label-text" for="">BYGGNAD</label>
-                                <div class="uk-inline">
-                                    <span class="uk-form-icon uk-form-icon-flip">
-                                        <i class="bi bi-funnel"></i>
-                                    </span>
-                                    <input class="uk-input" type="text" aria-label="Not clickable icon">
-                                </div>
-                            </th>
-                            <th>
-                                <label class="label-text" for="">ANTECKNINGAR</label>
-                                <div class="uk-inline">
-                                    <span class="uk-form-icon uk-form-icon-flip">
-                                        <i class="bi bi-funnel"></i>
-                                    </span>
-                                    <input class="uk-input" type="text" aria-label="Not clickable icon">
-                                </div>
-                            </th>
-                            <th>
-                                <label class="label-text" for="">RUM</label>
-                                <div class="uk-inline">
-                                    <span class="uk-form-icon uk-form-icon-flip">
-                                        <i class="bi bi-funnel"></i>
-                                    </span>
-                                    <input class="uk-input" type="text" aria-label="Not clickable icon">
-                                </div>
-                            </th>
-                            <th>
-                                <label class="label-text" for="">KONSTPORTAL</label>
-                                <div class="uk-inline">
-                                    <span class="uk-form-icon uk-form-icon-flip">
-                                        <i class="bi bi-funnel"></i>
-                                    </span>
-                                    <input class="uk-input" type="text" aria-label="Not clickable icon">
-                                </div>
-                            </th>
-                            <th>
-                                <label class="label-text" for="">KONSTNÄR</label>
-                                <div class="uk-inline">
-                                    <span class="uk-form-icon uk-form-icon-flip">
-                                        <i class="bi bi-funnel"></i>
-                                    </span>
-                                    <input class="uk-input" type="text" aria-label="Not clickable icon">
-                                </div>
-                            </th>
-                            <th>
-                                <label class="label-text" for="">SKADAD</label>
-                                <div class="uk-inline">
-                                    <span class="uk-form-icon uk-form-icon-flip">
-                                        <i class="bi bi-funnel"></i>
-                                    </span>
-                                    <input class="uk-input" type="text" aria-label="Not clickable icon">
-                                </div>
-                            </th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                            <td>
-                                <i class="bi bi-flag icon"></i> 
-                            </td>
-                            <td>
-                                <a href="" class="imgTable">
-                                    <img src="assets/1.jpg" alt="" class="img-fluid">
-                                </a>
-                            </td>
-                            <td class="text-center">
-                                8
-                            </td>
-                            <td>Sandor Sandström</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Bibiloteset</td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                            <td>
-                                2013-04-23
-                            </td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="bi bi-flag icon"></i> 
-                            </td>
-                            <td>
-                                <a href="" class="imgTable">
-                                    <img src="assets/2.jpg" alt="" class="img-fluid">
-                                </a>
-                            </td>
-                            <td class="text-center">
-                                10
-                            </td>
-                            <td>Anna Andersson</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Anna Andersson</td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                            <td>
-                                2013-04-23
-                            </td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="bi bi-flag icon"></i> 
-                            </td>
-                            <td>
-                                <a href="" class="imgTable">
-                                    <img src="assets/3.jpg" alt="" class="img-fluid">
-                                </a>
-                            </td>
-                            <td class="text-center">
-                                11
-                            </td>
-                            <td>Anna Andersson</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Anna Andersson</td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                            <td>
-                                2013-04-23
-                            </td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="bi bi-flag icon"></i> 
-                            </td>
-                            <td>
-                                <a href="" class="imgTable">
-                                    <img src="assets/4.jpg" alt="" class="img-fluid">
-                                </a>
-                            </td>
-                            <td class="text-center">
-                                11
-                            </td>
-                            <td>Anna Andersson</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Anna Andersson</td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                            <td>
-                                2013-04-23
-                            </td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="bi bi-flag icon"></i> 
-                            </td>
-                            <td>
-                                <a href="" class="imgTable">
-                                    <img src="assets/4.jpg" alt="" class="img-fluid">
-                                </a>
-                            </td>
-                            <td class="text-center">
-                                11
-                            </td>
-                            <td>Anna Andersson</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Anna Andersson</td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                            <td>
-                                2013-04-23
-                            </td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="bi bi-flag icon"></i> 
-                            </td>
-                            <td>
-                                <a href="" class="imgTable">
-                                    <img src="assets/4.jpg" alt="" class="img-fluid">
-                                </a>
-                            </td>
-                            <td class="text-center">
-                                11
-                            </td>
-                            <td>Anna Andersson</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Anna Andersson</td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                            <td>
-                                2013-04-23
-                            </td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="bi bi-flag icon"></i> 
-                            </td>
-                            <td>
-                                <a href="" class="imgTable">
-                                    <img src="assets/4.jpg" alt="" class="img-fluid">
-                                </a>
-                            </td>
-                            <td class="text-center">
-                                11
-                            </td>
-                            <td>Anna Andersson</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Anna Andersson</td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                            <td>
-                                2013-04-23
-                            </td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="bi bi-flag icon"></i> 
-                            </td>
-                            <td>
-                                <a href="" class="imgTable">
-                                    <img src="assets/4.jpg" alt="" class="img-fluid">
-                                </a>
-                            </td>
-                            <td class="text-center">
-                                11
-                            </td>
-                            <td>Anna Andersson</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Anna Andersson</td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                            <td>
-                                2013-04-23
-                            </td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="bi bi-flag icon"></i> 
-                            </td>
-                            <td>
-                                <a href="" class="imgTable">
-                                    <img src="assets/4.jpg" alt="" class="img-fluid">
-                                </a>
-                            </td>
-                            <td class="text-center">
-                                11
-                            </td>
-                            <td>Anna Andersson</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Anna Andersson</td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                            <td>
-                                2013-04-23
-                            </td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="bi bi-flag icon"></i> 
-                            </td>
-                            <td>
-                                <a href="" class="imgTable">
-                                    <img src="assets/4.jpg" alt="" class="img-fluid">
-                                </a>
-                            </td>
-                            <td class="text-center">
-                                11
-                            </td>
-                            <td>Anna Andersson</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Xavier Xado</td>
-                            <td>Anna Andersson</td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                            <td>
-                                2013-04-23
-                            </td>
-                            <td class="text-center">
-                                <input class="uk-checkbox" type="checkbox" checked>
-                            </td>
-                        </tr>
-                     </tbody>
-                    </table>
-                </div>
-                <div class="paginationWrapper">
-                    <nav aria-label="Pagination">
-                        <ul class="uk-pagination" uk-margin>
-                            <li><a href="#"><span uk-pagination-previous></span></a></li>
-                            <li class="uk-active"><span aria-current="page">1</span></li>
-                            <li><a href="#">2</a></li>
-                            <li class="uk-disabled"><span>…</span></li>
-                            <li><a href="#">9</a></li>
-                            <li><a href="#"><span uk-pagination-next></span></a></li>
-                        </ul>
-                    </nav>
-                </div>
+               <div class="innerBetween">
+                    <div class="table-responsive">
+                        <!---------- table ----------------->
+                        <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="flag">
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </th>
+                                <th></th>
+                                <th class="">
+                                    <label class="label-text" for="">ID-HOMHER</label>
+                                    <div class="uk-inline">
+                                        <span class="uk-form-icon uk-form-icon-flip">
+                                            <i class="bi bi-funnel"></i>
+                                        </span>
+                                        <input class="uk-input" type="text" aria-label="Not clickable icon">
+                                    </div>
+                                </th>
+                                <th>
+                                    <label class="label-text" for="">KONSTNÄR</label>
+                                    <div class="uk-inline">
+                                        <span class="uk-form-icon uk-form-icon-flip">
+                                            <i class="bi bi-funnel"></i>
+                                        </span>
+                                        <input class="uk-input" type="text" aria-label="Not clickable icon">
+                                    </div>
+                                </th>
+                                <th>
+                                    <label class="label-text" for="">TITEL</label>
+                                    <div class="uk-inline">
+                                        <span class="uk-form-icon uk-form-icon-flip">
+                                            <i class="bi bi-funnel"></i>
+                                        </span>
+                                        <input class="uk-input" type="text" aria-label="Not clickable icon">
+                                    </div>
+                                </th>
+                                <th>
+                                    <label class="label-text" for="">BYGGNAD</label>
+                                    <div class="uk-inline">
+                                        <span class="uk-form-icon uk-form-icon-flip">
+                                            <i class="bi bi-funnel"></i>
+                                        </span>
+                                        <input class="uk-input" type="text" aria-label="Not clickable icon">
+                                    </div>
+                                </th>
+                                <th>
+                                    <label class="label-text" for="">ANTECKNINGAR</label>
+                                    <div class="uk-inline">
+                                        <span class="uk-form-icon uk-form-icon-flip">
+                                            <i class="bi bi-funnel"></i>
+                                        </span>
+                                        <input class="uk-input" type="text" aria-label="Not clickable icon">
+                                    </div>
+                                </th>
+                                <th>
+                                    <label class="label-text" for="">RUM</label>
+                                    <div class="uk-inline">
+                                        <span class="uk-form-icon uk-form-icon-flip">
+                                            <i class="bi bi-funnel"></i>
+                                        </span>
+                                        <input class="uk-input" type="text" aria-label="Not clickable icon">
+                                    </div>
+                                </th>
+                                <th>
+                                    <label class="label-text" for="">KONSTPORTAL</label>
+                                    <div class="uk-inline">
+                                        <span class="uk-form-icon uk-form-icon-flip">
+                                            <i class="bi bi-funnel"></i>
+                                        </span>
+                                        <input class="uk-input" type="text" aria-label="Not clickable icon">
+                                    </div>
+                                </th>
+                                <th>
+                                    <label class="label-text" for="">KONSTNÄR</label>
+                                    <div class="uk-inline">
+                                        <span class="uk-form-icon uk-form-icon-flip">
+                                            <i class="bi bi-funnel"></i>
+                                        </span>
+                                        <input class="uk-input" type="text" aria-label="Not clickable icon">
+                                    </div>
+                                </th>
+                                <th>
+                                    <label class="label-text" for="">SKADAD</label>
+                                    <div class="uk-inline">
+                                        <span class="uk-form-icon uk-form-icon-flip">
+                                            <i class="bi bi-funnel"></i>
+                                        </span>
+                                        <input class="uk-input" type="text" aria-label="Not clickable icon">
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/1.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    8
+                                </td>
+                                <td>Sandor Sandström</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Bibiloteset</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/2.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    10
+                                </td>
+                                <td>Anna Andersson</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Anna Andersson</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/3.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    11
+                                </td>
+                                <td>Anna Andersson</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Anna Andersson</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/4.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    11
+                                </td>
+                                <td>Anna Andersson</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Anna Andersson</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/4.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    11
+                                </td>
+                                <td>Anna Andersson</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Anna Andersson</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/4.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    11
+                                </td>
+                                <td>Anna Andersson</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Anna Andersson</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/4.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    11
+                                </td>
+                                <td>Anna Andersson</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Anna Andersson</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/4.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    11
+                                </td>
+                                <td>Anna Andersson</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Anna Andersson</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/4.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    11
+                                </td>
+                                <td>Anna Andersson</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Anna Andersson</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/4.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    11
+                                </td>
+                                <td>Anna Andersson</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Anna Andersson</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/4.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    11
+                                </td>
+                                <td>Anna Andersson</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Anna Andersson</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flagDiv">
+                                        <i class="bi bi-flag icon"></i> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="" class="imgTable">
+                                        <img src="assets/4.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    11
+                                </td>
+                                <td>Anna Andersson</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Xavier Xado</td>
+                                <td>Anna Andersson</td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                                <td>
+                                    2013-04-23
+                                </td>
+                                <td class="text-center">
+                                    <input class="uk-checkbox" type="checkbox" checked>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    <!---------- pagination ----------------->
+                    <div class="paginationWrapper">
+                        <nav aria-label="Pagination">
+                            <ul class="uk-pagination" uk-margin>
+                                <li><a href="#"><span uk-pagination-previous></span></a></li>
+                                <li class="uk-active"><span aria-current="page">1</span></li>
+                                <li><a href="#">2</a></li>
+                                <li class="uk-disabled"><span>…</span></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#"><span uk-pagination-next></span></a></li>
+                            </ul>
+                        </nav>
+                        <div class="pageSize">
+                            <label class="uk-form-label" for="form-horizontal-text">PAGE SIZE:</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-horizontal-text" type="number" value="12">
+                            </div>
+                        </div>
+                        <div class="totalEntries">POST 1 TO 6 OF 780</div>
+                    </div>
+               </div>
             </main>
         </div>
         <div class="footer copyright">@2024 REGITART | ALL RIGHTS RESERVED</div>

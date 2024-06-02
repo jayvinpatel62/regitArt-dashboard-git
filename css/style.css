@@ -100,6 +100,14 @@ body{
     align-items: start;
     justify-content: space-between;
     flex-direction: column;
+    box-shadow: 0 4px 6px #00000055;
+    position: relative;
+    .notifiaction-icon{
+        position: absolute;
+        right: 20px;
+        color: var(--primary-color);
+        font-size: 20px;
+    }
     .uk-nav{
         text-transform: uppercase;
         font-size: 16px;
@@ -127,11 +135,33 @@ body{
     height: 54px;
     color: var(--muted-color);
 }
-
+.innerBetween{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.table-responsive{
+    border-radius: 10px;
+}
 .table{
     .label-text{
         font-size: 14px;
         font-weight: 400;
+    }
+    .uk-inline{
+        max-width: 130px;
+        --input-height:30px;
+        .uk-input{
+            height: var(--input-height);
+            border-radius: 5px;
+        }
+        .uk-form-icon{
+            width:var(--input-height) ;
+        }
+        .uk-form-icon-flip~.uk-input {
+            padding-right: var(--input-height) !important;
+        }
     }
     tbody{
         tr{
@@ -150,4 +180,53 @@ body{
             object-fit: cover;
         }
     }
+}
+.paginationWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    gap: 10px;
+}
+.uk-pagination{
+    gap: 10px;
+    margin: 0;
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 60px;
+        padding-right: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid var(--muted-color);
+        padding: 0;
+        a{
+            padding: 10px;
+        }
+    }
+}
+.pageSize{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+    label{
+        color: var(--muted-color);
+    }
+    input{
+        max-width: 60px;
+        padding-right: 5px;
+        border-radius: 5px;
+        width: 50px;
+        height: 30px;
+    }
+}
+.totalEntries{
+    font-size: 12px;
+    color: var(--muted-color);
 }
