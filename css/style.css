@@ -141,7 +141,11 @@ body{
     justify-content: space-between;
     height: 100%;
 }
-.table-responsive{
+
+.table-responsive {
+    overflow-x: auto;
+    max-width: calc(100vw - 350px);
+    -webkit-overflow-scrolling: touch;
     border-radius: 10px;
 }
 .table{
