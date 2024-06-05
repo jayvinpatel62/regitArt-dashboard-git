@@ -5,7 +5,10 @@
     --body-bg:#F2F2F2;
     --sidepanel-width:256px;
     --muted-color:#A5A1A4;
-    --grid-gap:30px;
+    --grid-gap:15px;
+    --radius: 8px;
+    --colorLight:#C3C3C3;
+    --testColor:#C3C3C3;
 }
 body{
     font-family: "Josefin Sans", sans-serif;
@@ -21,10 +24,11 @@ body{
     padding-bottom: 0;
 }
 
+
 .gridWrapper{
     display: grid;
     grid-template-columns: var(--sidepanel-width) 1fr;
-    grid-template-rows: 60px 1fr;
+    grid-template-rows: 80px 1fr;
     grid-template-areas: "logo header" "sidebar main" "footer footer";
     gap: var(--grid-gap);
     .logo{
@@ -49,17 +53,25 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap:30px;
+    gap:15px;
+    box-shadow: 0 4px 4px #00000055;
+    background: white;
+    border-radius: var(--radius);
+    .btn-outline-light{
+        border-color: var(--colorLight);
+        color: var(--colorLight);
+        &:hover{
+            border-color: var(--dark);
+            color: var(--dark);
+        }
+    }
 }
 .mainmenu{
     display: flex;
     align-items: center;
-    box-shadow: 0 4px 6px #00000055;
-    background: white;
-    border-radius: 5px;
     justify-content: space-between;
     width: 100%;
-    gap:30px;
+    gap:15px;
     .uk-navbar{
         width: 100%;
     }
@@ -78,6 +90,7 @@ body{
             white-space: nowrap;
             min-height: 40px;
             font-size: 16px;
+            font-weight: 600;
            
        }
         .icon{
@@ -95,7 +108,7 @@ body{
     width: var(--sidepanel-width);
     background: white;
     height: 100%;
-    border-radius: 10px;
+    border-radius: var(--radius);
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -109,20 +122,25 @@ body{
         font-size: 20px;
     }
     .uk-nav{
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing:1.5px;
+    
         a{
             color: var(--text-color);
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing:1.5px;
         }
         li.uk-active{
             a{
                 color: var(--primary-color) !important;
             }
         }
+        a.uk-active{
+            color: var(--primary-color) !important;
+        }
         .uk-nav-sub{
             font-size: 14px;
+            padding: 0;
         }
     }
 }
@@ -144,7 +162,6 @@ body{
 
 .table-responsive {
     overflow-x: auto;
-    max-width: calc(100vw - 350px);
     -webkit-overflow-scrolling: touch;
     border-radius: 10px;
 }
